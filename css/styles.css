@@ -1,0 +1,152 @@
+:root{
+    --brightorange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --bckheadbutton: hsl(0, 0%, 95%);
+    --paragraphs: hsla(0, 36%, 95%, 0.75);
+}
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bckheadbutton);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    color: var(--bckheadbutton);
+    
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding: 3rem 0;
+}
+p{
+    color: var(--paragraphs);
+    line-height: 2.5rem;
+    width: 99%;
+    max-height: 15rem;
+
+}
+
+img{
+    width: 6rem;
+}
+
+.sedan{
+    background-color: var(--brightorange);
+}
+.suv{
+    background-color: var(--darkcyan);
+}
+.luxury{
+    background-color: var(--verydarkcyan);
+}
+.card{
+    display: flex;
+    max-width: 90rem;
+    min-height: 50rem;
+    
+}
+
+
+
+.car{
+    padding: 5%;
+}
+
+.car:nth-of-type(1){
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.car:nth-of-type(3){
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.btn{
+    margin-top: 11rem;
+
+    background: var(--bckheadbutton);
+    padding:1.5rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn:hover{
+    /* background-color: transparent; */
+    color: var(--bckheadbutton);
+    background-color: transparent;
+    border: 0.2rem solid var(--bckheadbutton);
+    cursor: pointer;
+}
+.sedan button {
+    color: var(--brightorange);
+}
+.suv button {
+    color: var(--darkcyan);
+}
+.luxury button {
+    color: var(--verydarkcyan);
+}
+
+@media (max-width:540px) {
+    main{
+        margin: 10rem;
+    }
+
+   .card{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 101vh;
+    width: 100%;
+
+   }
+   .car{
+    box-sizing: border-box;
+    min-width: 33rem;
+    min-height: 44rem;
+    padding:5rem;
+   }
+   .btn{
+    margin-top: 14rem;
+   }
+   .car:nth-of-type(1){
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0 ;
+    
+}
+    .car:nth-of-type(3){
+    
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 0;
+}
+   
+    
+    
+}
